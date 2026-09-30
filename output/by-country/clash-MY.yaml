@@ -16,8 +16,47 @@ proxies:
   ws-opts:
     path: /platform128
     headers:
-      Host: platform128.halalkhor.info
+      Host: platform128.golnamakcert.top
 - name: 🇲🇾 MY 02 - xiaohe
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 03 - xiaohe
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 04 - xiaohe
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 05 - xiaohe
   type: vless
   server: platform128.golnamakcert.top
   port: 80
@@ -37,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
+  - 🇲🇾 MY 04 - xiaohe
+  - 🇲🇾 MY 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
+  - 🇲🇾 MY 04 - xiaohe
+  - 🇲🇾 MY 05 - xiaohe
 rules:
 - MATCH,PROXIES
