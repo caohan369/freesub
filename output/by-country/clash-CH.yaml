@@ -25,34 +25,6 @@ proxies:
     path: /nl-tw
     headers:
       Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: 188.34.142.174
-  port: 444
-  uuid: da46ec1f-84ad-4470-866f-010b58357b19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 04 - xiaohe
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 rules:
 - MATCH,PROXIES
